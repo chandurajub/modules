@@ -33,7 +33,7 @@ resource "aws_instance" "ec2" {
 resource "aws_instance" "ec21" {
   ami = "ami-0c84a3e93390c29bc"
   instance_type = "t2.micro"
-  subnet_id = element(var.public_sub,3)
+  subnet_id = element(var.public_sub,2)
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 }
 
