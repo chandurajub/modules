@@ -24,5 +24,5 @@ variable "vpc_id" {
 }
 variable "manage_vpc" {
   default = data.terraform_remote_state.vpc.outputs.manage_vpc
-
+//
 }*/
